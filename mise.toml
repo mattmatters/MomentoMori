@@ -1,0 +1,29 @@
+[settings]
+python.uv_venv_auto = true
+
+[tools]
+python = "3.13.7"
+uv = "latest"
+
+[env]
+_.file = ".env"
+
+[tasks.install]
+description = "Install project dependencies"
+run = "uv sync"
+
+[tasks.dev]
+description = "Run the Flask development server"
+run = "uv run flask --app momento_mori/flask_app.py run"
+
+[tasks.format]
+description = "Format Python code"
+run = "uv run ruff format"
+
+[tasks.lint]
+description = "Lint Python code"
+run = "uv run ruff check"
+
+[tasks.lint-fix]
+description = "Lint and fix Python code"
+run = "uv run ruff check --fix"

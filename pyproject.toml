@@ -1,0 +1,22 @@
+[project]
+name = "momento-mori"
+version = "0.2.0"
+description = "Life expectancy/Anti Procrastination App"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "Flask==3.1.2",
+  "gunicorn>=19.9.0",
+]
+
+[dependency-groups]
+dev = [
+  "mypy==1.17.1",  # https://github.com/python/mypy
+  "ruff==0.12.10",  # https://github.com/astral-sh/ruff
+]
+
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.lint.isort]
+force-single-line = true
