@@ -27,3 +27,7 @@ run = "uv run ruff check"
 [tasks.lint-fix]
 description = "Lint and fix Python code"
 run = "uv run ruff check --fix"
+
+[tasks.test]
+description = "Run tests"
+run = "uv run pytest"
