@@ -13,8 +13,8 @@ description = "Install project dependencies"
 run = "uv sync"
 
 [tasks.dev]
-description = "Run the Flask development server"
-run = "uv run flask --app momento_mori/flask_app.py run"
+description = "Run the FastAPI development server"
+run = "uv run uvicorn momento_mori.main:app --reload"
 
 [tasks.format]
 description = "Format Python code"

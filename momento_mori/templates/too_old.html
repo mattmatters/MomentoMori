@@ -2,7 +2,7 @@
 {% block body %}
 <div class="container">
     <div class="ambassadors-img">
-        <img src="{{ url_for('static', filename='the_ambassadors.jpg') }}">
+        <img src="{{ request.url_for('static', path='the_ambassadors.jpg') }}">
         <p style="margin-top: .05em">
             <i>The Ambassadors by Hans Holbein the Younger</i>
         </p>

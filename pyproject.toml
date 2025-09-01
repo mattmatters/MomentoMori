@@ -5,14 +5,18 @@ description = "Life expectancy/Anti Procrastination App"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-  "Flask==3.1.2",
-  "gunicorn>=19.9.0",
+  "fastapi==0.115.6",          # https://github.com/fastapi/fastapi
+  "uvicorn[standard]>=0.34.0", # https://github.com/encode/uvicorn
+  "jinja2>=3.1.6",             # https://github.com/pallets/jinja
+  "python-multipart>=0.0.20",  # https://github.com/Kludex/python-multipart
 ]
 
 [dependency-groups]
 dev = [
-  "mypy==1.17.1",  # https://github.com/python/mypy
+  "mypy==1.17.1",   # https://github.com/python/mypy
   "ruff==0.12.10",  # https://github.com/astral-sh/ruff
+  "pytest>=8.0.0",  # https://github.com/pytest-dev/pytest
+  "httpx>=0.27.0",  # https://github.com/encode/httpx
 ]
 
 [tool.ruff]
