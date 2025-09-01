@@ -1,5 +1,8 @@
 {% extends "layout.html" %}
 {% block body %}
+<div class="hero-section">
+    <img src="{{ request.url_for('static', path='hero-image.jpg') }}" alt="Vanitas Still Life - Philippe de Champaigne (c. 1671)" class="hero-image">
+</div>
 <div class="container">
     {% include "search.html" %}
     <p class="text-center">Momento Moris are objects that serve as a reminder or warning of death. Find out how much time you have left to get the important things done.</p>

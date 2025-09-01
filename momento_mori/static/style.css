@@ -15,14 +15,15 @@ html {
 }
 
 header {
-    margin: 1em;
+    margin: 2rem 0;
     text-align: center;
+    padding: 1rem;
 }
 
 h1, h2, h3 {
     color: #383B53;
     font-family: 'Cinzel Decorative', cursive;
-    margin: .3em;
+    margin: 1rem 0;
 }
 
 h3 {
@@ -34,9 +35,25 @@ h4, p, ul {
     font-family: 'Roboto', sans-serif;
 }
 
-input {
-    font-size: .8em;
-    padding: .2em;
+input, select {
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    border: 2px solid #66717E;
+}
+
+input[type="submit"] {
+    background-color: #383B53;
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #32213A;
 }
 
 .text-input {
@@ -52,6 +69,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 .text-center {
@@ -62,6 +83,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.container p {
+    margin: 2rem 0;
+    line-height: 1.6;
+    max-width: 500px;
 }
 
 .social {
@@ -96,4 +126,18 @@ body {
 .ambassadors-img p {
     font-size: .8em;
     margin-top: .05em;
+}
+
+.hero-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero-image {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
