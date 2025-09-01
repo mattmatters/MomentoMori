@@ -1,6 +1,6 @@
-# MomentoMori
+# Memento Mori
 
-Life expectancy/Anti Procrastination App
+Life expectancy/Anti Procrastination App built with FastAPI
 
 ## Running
 
