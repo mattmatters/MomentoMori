@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
 {% block body %}
-<p class="text-center">
-    You have {{ years }} years left in your life.
-</p>
+<div class="result-section">
+    <div class="death-imagery">
+        <img src="{{ request.url_for('static', path=years|death_image) }}" alt="Memento Mori imagery based on remaining life expectancy" class="death-image">
+    </div>
+    <p class="text-center life-expectancy">
+        You have {{ years }} years left in your life.
+    </p>
+</div>
 {% endblock %}

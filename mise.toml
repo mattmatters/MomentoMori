@@ -10,11 +10,11 @@ _.file = ".env"
 
 [tasks.install]
 description = "Install project dependencies"
-run = "uv sync"
+run = "uv sync --dev"
 
 [tasks.dev]
-description = "Run the FastAPI development server"
-run = "uv run uvicorn momento_mori.main:app --reload"
+description = "Run a hot reloading dev server"
+run = "uv run uvicorn momento_mori.app:app --reload"
 
 [tasks.format]
 description = "Format Python code"
